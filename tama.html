@@ -1,0 +1,55 @@
+<html> 
+<head>
+<title>Tamagotchi</title>
+<style>
+.btn {
+  background-color: orange;
+  color:white;
+  border-radius: 50%;
+  /*this will rounden-up the button*/
+  width: 80px;
+  height: 80px;
+  /*keep the height and width equal*/
+}
+</style>
+<script> 
+
+function changeImage(){
+var img = document.getElementById("image");
+img.src="eating.png";
+call(returnImage())
+return false;
+}
+
+function returnImage(){
+var img = document.getElementById("image");
+img.src="download1.jpeg";
+return false;
+}
+
+function returnImage1(){
+var img = document.getElementById("image");
+img.src="playing.png";
+return false;
+}
+
+function returnImage2(){
+var img = document.getElementById("image");
+img.src="go-out.jpg";
+return false;
+}
+</script>
+</head>
+
+<body style="background-color:lightblue;">
+<img id="image" src="download1.jpeg" />
+<br><br><br>
+<button id="clickme" onclick="changeImage();" class="btn">Feed!</button>
+<button onclick="returnImage1()"  class="btn">Play!</button>
+<button onclick="returnImage2()"  class="btn">Go Out!</button>
+<button onclick="returnImage()"  class="btn">Return Home!</button>
+<h3>Enter name here!</h3>
+<input type="text" alt="name" placeholder="Enter name here!">
+<button onClick="window.location.reload();" class="btn">Reset</button>
+</body>
+</html>

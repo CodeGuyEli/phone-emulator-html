@@ -1,0 +1,60 @@
+/* Styling for the body and html */
+body, html {
+  height: 100%;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Styling for the parallax effect */
+.parallax {
+  /* The image used */
+  background-image: url("https://share.sketchpad.app/22/b2f-c906-877520.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* The background-attachment creates the parallax scrolling effect */
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styling for the text */
+.text {
+  font-family: open sans, sans-serif;
+  height: 1000px;
+  background-color: #b3e9ff;
+  font-size: 36px;
+  padding: 20px;
+}
+/* Styling for the body */
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: open sans, sans-serif;
+}
+
+/* Styling for the grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #b3e9ff;
+  padding: 10px;
+}
+
+/* Styling for the all of the div elements that are the children of the grid container */
+.grid-container > div {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* Styling for the first value in the grid */
+.item1 {
+  grid-column-start: 1; /* The grid begins at the start value. */
+  grid-column-end: 3;  /* The grid ends at one less than end value. */
+}

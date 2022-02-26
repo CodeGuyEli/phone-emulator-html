@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        var textbox;
+    function onload() { 
+        //Get value.
+        textbox = document.getElementById('textbox');
+    }
+
+    function showMessage() { 
+        //Show message in alert()
+        alert("New message: " + textbox.value);
+        document.getElementById("money").innerHTML = "You:" + textbox.value;
+    }
+    </script>
+    <title>Chat</title>
+  </head>
+  <body onload="onload();">
+      <h1>Messages</h1>
+      <p id="money">No messages yet....</p>
+<div>
+<input type="text" name="enter" class="enter" placeholder="Write something here!" value="" id="textbox"/>
+<input type="button" value="Show this message!" onClick="showMessage()" />
+</div>
+</html>

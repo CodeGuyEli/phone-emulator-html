@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+#videoElement {
+    max-height: 80%;
+    max-width: 80%;
+    background-color: #666
+}
+</style>
+</head>
+<body>
+<video autoplay muted playsinline id="videoElement"></video>
+<script>
+var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (e) {
+      console.error(e);
+    });
+}
+</script>
+    <button><a href="index.html" style="color: black; text-decoratiopn: none;">home</a></button>
+</body>
+</html>
