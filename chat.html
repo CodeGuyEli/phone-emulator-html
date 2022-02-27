@@ -1,18 +1,19 @@
 
-<!DOCTYPE html>
 <html>
   <head>
     <script>
         var textbox;
+        var n;
     function onload() { 
         //Get value.
         textbox = document.getElementById('textbox');
+        n = document.getElementById('t');
     }
 
     function showMessage() { 
         //Show message in alert()
         alert("New message: " + textbox.value);
-        document.getElementById("money").innerHTML = "You:" + textbox.value;
+        document.getElementById("money").innerHTML =  n.value + ":" + textbox.value;
     }
     </script>
     <title>Chat</title>
@@ -21,7 +22,8 @@
       <h1>Messages</h1>
       <p id="money">No messages yet....</p>
 <div>
+<input type="text" id="t" placeholder="Enter name here!">
 <input type="text" name="enter" class="enter" placeholder="Write something here!" value="" id="textbox"/>
-<input type="button" value="Show this message!" onClick="showMessage()" />
+<input type="button" value="Send!" onClick="showMessage()" />
 </div>
 </html>
