@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+/* Styling for the all of the div elements that are the children of the grid container */
+.grid-container > div {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-size: 30px;
+}
+
+/* Styling for the first value in the grid */
+.item1 {
+  grid-column-start: 1; /* The grid begins at the start value. */
+  grid-column-end: 3;  /* The grid ends at one less than end value. */
+}
+
+/* Styling for h1 */
+h1 {
+  text-align: center;
+}
+
+        body {
+             background-image: url("iphone-bg.png")
+        }
+        h2 {
+            color: aliceblue
+        }
+    </style>
+    <title>Your Webpage</title>
+  </head>
+  <h2>3:51 PM 2/25/2022</h2>
+    <div class="grid-container">
+        <div class="item1"><button><a href="maps.html" style="text-decoration:none; color: black;">Maps</a></button></div>
+        <div class="item2"><button><a href="tama.html" style="text-decoration:none; color: black;">Tamagotchi</a></button></div>
+        <div class="item3"><button><a href="camera.html" style="text-decoration:none; color: black;">Camera</a></button></div>  
+        <div class="item4"><button><a href="chat.html" style="text-decoration:none; color: black;">Chat</a></button></div>
+        <div class="item5"><button><a href="oscy.html" style="text-decoration:none; color: black;">Oscillascope</a></button></div>
+        <div class="item6"><button><a href="call.html" style="color: black; text-decoration: none;">Call</a></button></div>
+        <div class="item7"><button><a href="videos.html" style="color: black; text-decoration: none;">Videos</a></button></div>
+        <div class="item8"><button><a href="index.html" style="color: black; text-decoration: none;">Logout</a></button></div>  
+    </div>
+    <br><br>
+    <h1 style="color: white">-----------------------------</h1>
+    <button style="width: 297px; height: 48px">Fidget Button</button>
+</html>
